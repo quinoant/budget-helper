@@ -20,6 +20,11 @@ public class UserController {
     return userRepository.findAll();
   }
 
+  @GetMapping("/{id}")
+  public User get(@PathVariable("id") long id){
+    return userRepository.getReferenceById(id);
+  }
+
   @PostMapping
   public User createUser(@RequestBody User user) {
     return userRepository.save(user);
