@@ -18,6 +18,7 @@ public class Budget {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long budget_uid;
     private long budget_income;
+    private long budget_user_uid;
     private long budget_expenses;
     private String budget_items;
     private final Timestamp budget_creation_date;
@@ -46,6 +47,10 @@ public class Budget {
 
     public long getBudget_income() {
         return budget_income;
+    }
+
+    public long getBudget_user_uid() {
+        return budget_user_uid;
     }
 
     public void setBudget_income(long budget_income) {
