@@ -19,7 +19,6 @@ public class User {
     private Long user_uid;
     private String user_name;
     private String user_email;
-    // TODO: make final and delete setter when no longer using postman
     private String user_password; 
     private final Timestamp user_creation_date;
     private Timestamp user_update_date;
